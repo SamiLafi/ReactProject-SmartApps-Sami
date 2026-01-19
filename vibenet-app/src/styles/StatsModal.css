@@ -1,0 +1,140 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Below the modal */
+}
+
+.modal {
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the modal */
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 100%; /* Ensure modal content stretches fully */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all children inside modal-content */
+}
+
+.scrollable-list {
+    list-style-type: none; 
+    padding: 0;
+    max-height: 300px; 
+    overflow-y: auto;
+    width: 100%; 
+}
+
+.scrollable-list .list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.list-item {
+    display: flex;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background: rgb(243, 243, 243);
+}
+
+.list-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    object-fit: cover;
+    border: 2px solid rgb(179, 179, 179);
+}
+
+.list-item-text {
+    line-height: 1.2;
+}
+
+.list-item-text .name {
+    font-weight: bold;
+}
+
+.list-item-text .username {
+    color: gray;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.modal-content input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%; /* Ensure input takes full width */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .modal {
+        width: 80%;
+        padding: 15px;
+        max-width: 350px;
+    }
+
+    .modal-content {
+        padding: 10px;
+    }
+
+    .scrollable-list {
+        max-height: 250px;
+    }
+
+    .list-item {
+        padding: 10px;
+    }
+
+    .list-item img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        width: 90%;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .modal-content input {
+        font-size: 14px;
+    }
+
+    .list-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .list-item-text .username {
+        font-size: 0.8em;
+    }
+}

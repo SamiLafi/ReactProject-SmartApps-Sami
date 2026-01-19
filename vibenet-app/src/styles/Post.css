@@ -1,0 +1,86 @@
+/* Post.css */
+.post-list {
+    width: 100%;
+}
+
+.post {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+/* Post header styling */
+.post-header {
+    display: flex;
+    align-items: center;
+    position: relative; /* This allows absolute positioning of the timestamp */
+}
+
+/* Profile picture in post */
+.post-profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.post-description {
+    margin: 10px 0;
+}
+
+/* Username and handle */
+.post-username, .vibe-username {
+    font-weight: bold;
+}
+
+.post-handle, .vibe-handle {
+    color: gray;
+}
+
+/* Post description */
+.post-description, .vibe-description {
+    margin: 10px 0;
+}
+
+/* Post picture */
+.post-pic {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.post-pic img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 10px; /* Match post border radius */
+    max-height: 600px;
+}
+
+.checkmark {
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+/* Post actions */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-edited {
+    color: gray;
+    font-size: small;
+}
+
+/* Post date (time ago) styling */
+.post-date {
+    position: absolute;  /* Position the timestamp absolutely inside the header */
+    top: 0;
+    right: 0;
+    font-size: 14px;     /* Smaller text size */
+    color: gray;         /* Gray color for the time ago */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: light background to make the text stand out */
+    border-radius: 5px;
+}

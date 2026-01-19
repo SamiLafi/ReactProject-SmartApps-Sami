@@ -1,0 +1,29 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  margin-bottom: 100px;
+}
+
+button {
+  padding: 10px;
+  background: linear-gradient(90deg, #eeaa62, #e08361, #d6576a, #ca4178);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #d78f51, #b97150, #a14a5a, #9a355e);
+}

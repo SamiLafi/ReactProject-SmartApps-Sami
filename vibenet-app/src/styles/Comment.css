@@ -1,0 +1,73 @@
+.comment {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;   
+}
+
+.comment-names {
+    font-weight: bold;
+}
+
+.comment-username {
+    color: gray;
+}
+
+.post-menu {
+    position: relative;
+    margin-left: auto;
+}
+  
+.menu-button {
+    color: black;
+    cursor: pointer;
+    padding: 5;
+}
+  
+.menu-button:hover {
+    color: gray;
+    background: none;
+}
+  
+.dropdown-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+  
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    text-align: left;
+    width: 100%;
+    color: #000000;
+}
+  
+.dropdown-item:hover {
+    background: #dbdbdb;
+}
+
+.comment-text {
+    color: #000000;
+}
+
+.comment-profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+}

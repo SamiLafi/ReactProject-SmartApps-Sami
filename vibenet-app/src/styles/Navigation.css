@@ -1,0 +1,50 @@
+/* Bottom navigation bar styles */
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #e66465, #9198e5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 1000;
+  color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* List styling */
+.bottom-navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* List item styling */
+.bottom-navbar ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-navbar ul li a,
+.bottom-navbar ul li button {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Icon styling */
+.icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}

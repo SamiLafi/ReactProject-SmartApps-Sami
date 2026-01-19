@@ -1,0 +1,131 @@
+/* Post Comments Container */
+.post-comments-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 800px; /* Make it responsive by limiting max-width */
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.posts-comment-wrapper{
+  width: 800px;
+}
+
+/* Post Comment Styling */
+.post-comment {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.username, .post-bio {
+  color: #555;
+}
+
+.post-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.comments-section {
+  margin-top: 15px;
+}
+
+/* Add Comment Section */
+.add-comment {
+  display: flex;
+  flex-direction: row;  /* Ensure they are horizontally aligned */
+  align-items: center;  /* Center align items */
+  margin-top: 15px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.post-comment-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post-comment-button:hover {
+  background-color: #0056b3;
+}
+
+/* Image in Post Comment */
+.post-comment-pic img {
+  max-width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+  .post-comments-container {
+    padding: 10px;
+  }
+  .posts-comment-wrapper {
+    width: 600px;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .post-comments-container {
+    padding: 10px;
+  }
+  .posts-comment-wrapper{
+    width: 400px;
+  }
+
+  .add-comment {
+    flex-direction: column; /* Stack input and button on smaller screens */
+    align-items: stretch; /* Make input take full width */
+  }
+
+  .comment-input {
+    margin-right: 0;  /* Remove margin on smaller screens */
+    margin-bottom: 10px;  /* Add space below input */
+  }
+
+  .post-comment-button {
+    width: 100%;  /* Make button take full width on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .post-comments-container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .posts-comment-wrapper{
+    width: 300px;
+  }
+
+  .post-comment {
+    padding: 10px;
+  }
+
+  .add-comment {
+    flex-direction: column;
+  }
+
+  .comment-input {
+    margin-bottom: 10px;
+  }
+
+  .post-comment-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,165 @@
+/* Container styling */
+.post-input-container {
+  display: flex;
+  align-items: flex-start; /* Align items horizontally */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile picture styling */
+.profile-pic {
+  flex-shrink: 0; 
+  margin-right: 15px;
+}
+
+.profile-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Input wrapper styling */
+.input-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Vibe input field and button */
+.vibe-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vibe-input input {
+  flex: 1; /* Take up available space */
+  padding: 10px;
+  border: 1px solid #e08361;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.vibe-input button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.input-profile-pic img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+/* File input field styling */
+.post-input input[type="file"] {
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.file-selected {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #28a745;
+}
+
+/* Image preview styling */
+.image-preview {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.remove-image-btn:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+/* Hide the default input */
+.image-uploader {
+  display: none;
+}
+
+/* Label styled as a button */
+.image-uploader-label {
+  display: inline-block;
+  background: linear-gradient(90deg, #eeaa62, #e08361, #d6576a, #ca4178);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-uploader-label:hover {
+  background: linear-gradient(90deg, #d78f51, #b97150, #a14a5a, #9a355e);
+}
+
+.image-uploader-label:active {
+  background-color: #003d80; /* Even darker blue when clicked */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Adjust post input and filter layout */
+  .post-input-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-input-container {
+    padding: 10px;
+  }
+}

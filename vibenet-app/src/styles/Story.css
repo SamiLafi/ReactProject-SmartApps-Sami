@@ -1,0 +1,122 @@
+.story-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.story-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.story-header button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.story-header h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+.video-preview {
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    aspect-ratio: 9/16;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #000;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    resize: none;
+    background: #f9f9f9;
+}
+
+.media-capture,
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.media-capture button,
+.story-content button {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+    background: linear-gradient(90deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.action-buttons .submit-story {
+    flex: 2;
+    background-color: #28a745;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.action-buttons .submit-story:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .story-container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
